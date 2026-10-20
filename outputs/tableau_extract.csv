@@ -1,0 +1,62 @@
+view,scenario,year,attendance_uplift,premium_surcharge,premium_list_price,npv,irr,payback_years,net_cash_flow,cumulative_cash_flow
+Scenario summary,Base,,,,,-213905,0.0614,7.5,,
+Scenario summary,Upside,,,,,1647821,0.325,3.0,,
+Scenario summary,Downside,,,,,-1794151,,,,
+Cash flow,Base,0,,,,,,,-1447549,-1447549
+Cash flow,Base,1,,,,,,,175191,-1272358
+Cash flow,Base,2,,,,,,,180447,-1091911
+Cash flow,Base,3,,,,,,,185860,-906050
+Cash flow,Base,4,,,,,,,191436,-714614
+Cash flow,Base,5,,,,,,,197179,-517435
+Cash flow,Base,6,,,,,,,203095,-314340
+Cash flow,Base,7,,,,,,,209187,-105153
+Cash flow,Base,8,,,,,,,215463,110310
+Cash flow,Base,9,,,,,,,221927,332237
+Cash flow,Base,10,,,,,,,228585,560822
+Cash flow,Upside,0,,,,,,,-1308423,-1308423
+Cash flow,Upside,1,,,,,,,419820,-888603
+Cash flow,Upside,2,,,,,,,432414,-456189
+Cash flow,Upside,3,,,,,,,445387,-10803
+Cash flow,Upside,4,,,,,,,458748,447945
+Cash flow,Upside,5,,,,,,,472511,920456
+Cash flow,Upside,6,,,,,,,486686,1407142
+Cash flow,Upside,7,,,,,,,501287,1908428
+Cash flow,Upside,8,,,,,,,516325,2424754
+Cash flow,Upside,9,,,,,,,531815,2956568
+Cash flow,Upside,10,,,,,,,547769,3504338
+Cash flow,Downside,0,,,,,,,-1795363,-1795363
+Cash flow,Downside,1,,,,,,,172,-1795191
+Cash flow,Downside,2,,,,,,,177,-1795014
+Cash flow,Downside,3,,,,,,,183,-1794831
+Cash flow,Downside,4,,,,,,,188,-1794643
+Cash flow,Downside,5,,,,,,,194,-1794449
+Cash flow,Downside,6,,,,,,,199,-1794250
+Cash flow,Downside,7,,,,,,,205,-1794045
+Cash flow,Downside,8,,,,,,,212,-1793833
+Cash flow,Downside,9,,,,,,,218,-1793615
+Cash flow,Downside,10,,,,,,,225,-1793390
+Sensitivity,Base,,0.5,3.5,16.28,-1038250,,,,
+Sensitivity,Base,,0.5,4.25,17.03,-966145,,,,
+Sensitivity,Base,,0.5,5,17.78,-894040,,,,
+Sensitivity,Base,,0.5,5.75,18.53,-821935,,,,
+Sensitivity,Base,,0.5,6.5,19.28,-749830,,,,
+Sensitivity,Base,,0.75,3.5,16.28,-722218,,,,
+Sensitivity,Base,,0.75,4.25,17.03,-638095,,,,
+Sensitivity,Base,,0.75,5,17.78,-553972,,,,
+Sensitivity,Base,,0.75,5.75,18.53,-469850,,,,
+Sensitivity,Base,,0.75,6.5,19.28,-385727,,,,
+Sensitivity,Base,,1,3.5,16.28,-406185,,,,
+Sensitivity,Base,,1,4.25,17.03,-310045,,,,
+Sensitivity,Base,,1,5,17.78,-213905,,,,
+Sensitivity,Base,,1,5.75,18.53,-117764,,,,
+Sensitivity,Base,,1,6.5,19.28,-21624,,,,
+Sensitivity,Base,,1.25,3.5,16.28,-90152,,,,
+Sensitivity,Base,,1.25,4.25,17.03,18005,,,,
+Sensitivity,Base,,1.25,5,17.78,126163,,,,
+Sensitivity,Base,,1.25,5.75,18.53,234321,,,,
+Sensitivity,Base,,1.25,6.5,19.28,342478,,,,
+Sensitivity,Base,,1.5,3.5,16.28,225880,,,,
+Sensitivity,Base,,1.5,4.25,17.03,346056,,,,
+Sensitivity,Base,,1.5,5,17.78,466231,,,,
+Sensitivity,Base,,1.5,5.75,18.53,586406,,,,
+Sensitivity,Base,,1.5,6.5,19.28,706581,,,,
