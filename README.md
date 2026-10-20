@@ -2,17 +2,17 @@
 
 Author: Saathvik Maheshuni
 
-Should a U.S. movie theater chain turn some of its regular screens into premium screens like IMAX or Dolby Cinema? I built an Excel model of the cash flows from converting one screen over 10 years. It has three scenarios (base, upside and downside), a sensitivity table, and a one-page memo with my recommendation for an executive team. I used AMC's public numbers to stand for a large U.S. chain. This is my own analysis, not AMC's.
+Should a U.S. movie theater chain turn some of its regular screens into premium screens like IMAX or Dolby Cinema? I built an Excel model of the cash flows from converting one screen over 10 years. It has three scenarios (base, upside and downside), a sensitivity table, and a one-page memo with my recommendation for an executive team. I used AMC's public numbers to stand for a large U.S. chain. AMC wasn't involved; the analysis is my own.
 
 Tableau dashboard: [Premium-screen conversion: NPV per screen by scenario](https://public.tableau.com/app/profile/saathvik.maheshuni/viz/Premium-screeninvestmentmodel/Premium-screenconversionNPVperscreenbyscenario)
 
 ## What I found
 
-My recommendation is to convert only some screens, not all of them. In the base case, converting a screen costs $1.39 million. At a 9.5% discount rate the NPV is -$213,905 per screen, the IRR is 6.1%, and payback takes 7.5 years. In the upside case the NPV is $1,647,821 (IRR 32.5%, payback 3.0 years). In the downside case the screen loses $1,794,151 and does not pay back within 10 years.
+I'd convert only some of the screens. In the base case, converting a screen costs $1.39 million. At a 9.5% discount rate the NPV is -$213,905 per screen, the IRR is 6.1%, and payback takes 7.5 years. In the upside case the NPV is $1,647,821 (IRR 32.5%, payback 3.0 years). In the downside case the screen loses $1,794,151 and does not pay back within 10 years.
 
 The base case breaks even if attendance on the screen goes up by 115.7% (I call this the attendance uplift). It would also break even with a $6.67 premium surcharge at the base-case uplift. NPV turns positive at a 125% uplift once the surcharge is $4.25 or more. At a 150% uplift it is positive for every surcharge I tested, from $3.50 to $6.50.
 
-So why is the base case negative? Studios take 51.2% of ticket revenue. The premium format partner takes a share of the whole screen's box office. I also assumed half of the extra customers would have gone to one of the chain's other screens anyway. Because of this, converting only makes sense for screens that can bring in a lot more people than before.
+The base case is negative for a few reasons. Studios take 51.2% of ticket revenue. The premium format partner takes a share of the whole screen's box office. I also assumed half of the extra customers would have gone to one of the chain's other screens anyway. Because of this, converting only makes sense for screens that can bring in a lot more people than before.
 
 ![Sensitivity](outputs/sensitivity_npv.png)
 
@@ -29,21 +29,11 @@ SEC filings are public records, so the numbers can be used freely, and I cite ea
 
 The model has five main sheets. Inputs has every public number and assumption. Blue cells are inputs you can change, black cells are formulas, and each row shows its source or reason. Model builds the 10-year cash flow for the scenario picked in cell Inputs!B3. Year 0 has the conversion cost and the weeks the screen is closed. Each year after that has the extra ticket sales, film rent, the partner's share, food and drink profit, and extra operating costs. Scenarios shows all three scenarios side by side. Sensitivity shows NPV for different attendance uplifts and premium prices and finds the break-even points. Summary pulls together the results and a recommendation that updates with the formulas. The workbook also has a Checks sheet, a Charts sheet, and one sheet for each CSV in outputs/ (scenario_results, scenario_cash_flows, sensitivity_grid, key_metrics, model_inputs, tableau_extract and public_inputs). Those sheets are all formulas that point back to the model, so they update when an input changes.
 
-Every calculated cell is a formula that links back to Inputs. The workbook calculates with zero formula errors in Excel. It has checks that the sheets agree with each other, and the Checks sheet works out the three NPVs a second way with Excel's own NPV function and gets the same answers.
+Every calculated cell is a formula that links back to Inputs. There are no formula errors when it calculates in Excel. It has checks that the sheets agree with each other, and the Checks sheet works out the three NPVs a second way with Excel's own NPV function and gets the same answers.
 
 ## Files
 
-| Path | What it is |
-|---|---|
-| deliverables/premium_screen_model.xlsx | The model: Inputs, Model, Scenarios, Sensitivity, Summary, plus Checks, Charts and the export sheets |
-| deliverables/investment_memo.pdf, .md | One-page memo with my recommendation |
-| outputs/scenario_results.csv | NPV, IRR, payback and the main assumptions for each scenario |
-| outputs/scenario_cash_flows.csv | Yearly and running total cash flow for each scenario |
-| outputs/sensitivity_grid.csv | NPV for each attendance uplift and premium price |
-| outputs/key_metrics.csv, model_inputs.csv | Break-even points, and every model input with its source |
-| outputs/tableau_extract.csv | The three tables above in one file for the dashboard |
-| outputs/*.png | Pictures of the charts on the workbook's Charts sheet: scenario NPV, cumulative cash flow and the sensitivity table |
-| data/public_inputs.csv | The public numbers with their document and page |
+The model is deliverables/premium_screen_model.xlsx, and the memo is deliverables/investment_memo.pdf (with a .md copy). The CSVs in outputs/ are saved from the workbook's export sheets: results by scenario, yearly cash flows, the sensitivity grid, break-even points, every input with its source, and one combined file for Tableau. The PNGs there are pictures of the charts on the Charts sheet. data/public_inputs.csv lists the public numbers with their document and page.
 
 ## How to run it
 

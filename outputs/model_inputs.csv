@@ -26,7 +26,7 @@ Typical initial non-cancellable JRSA term,10,,,years,"IMAX Corporation, Form 10-
 IMAX box office per screen vs. average domestic screen,5.2,,,x,Box office share / screen share.
 Attendance of the screen chosen for conversion vs. average U.S. screen,1.25,,,x,"Chains convert their largest, busiest auditoriums. No public figure."
 Share of premium tickets sold without the premium surcharge,0.15,,,%,"A-List subscribers can book IMAX and Dolby Cinema at no extra cost (AMC 10-K, p. 8). The share is assumed."
-Premium projection and sound system per screen,891257.142857,,,$,"Proxy: IMAX's average revenue per new system installed in 2025 (section B). Applied in every scenario whatever the deal type; under a traditional JRSA, IMAX carries most of this cost, so the downside (blended JRSA share plus full equipment cost) is conservative."
+Premium projection and sound system per screen,891257.142857,,,$,"Proxy: IMAX's average revenue per new system installed in 2025 (section B). Used in every scenario, whatever the deal type. In a traditional JRSA, IMAX pays for most of this, so the downside (blended JRSA share plus the full equipment cost) is on the cautious side."
 "Auditorium construction per screen (screen wall, sound, seating, structure)",500000,,,$,No per-screen figure in the AMC or IMAX filings. Assumed.
 Conversion cost estimate per screen,1391257.142857,,,$,Equipment + construction. Scenarios scale this (section D).
 Weeks the screen is closed for conversion,8,,,weeks,Assumed.
@@ -35,7 +35,7 @@ Ticket price growth per year,0.03,,,%,"Below the 4.6% U.S. increase in 2025 (sec
 Food and beverage per patron growth per year,0.03,,,%,Close to the 3.3% U.S. increase in 2025 (section A).
 Operating cost inflation per year,0.03,,,%,Assumed.
 Attendance trend per year,0,,,%,U.S. attendance fell 0.7% in 2025 (section A); held flat.
-Cash tax rate on incremental profit,0,,,%,AMC's federal NOLs (section A) shelter profit over the 10-year window. Raise to test a taxpaying owner; years with a tax loss are assumed to offset other taxable income.
+Cash tax rate on incremental profit,0,,,%,"AMC's federal NOLs (section A) cover the profit for all 10 years, so there is no cash tax. Raise this to test an owner that pays tax. Years with a tax loss are assumed to offset other taxable income."
 Depreciation life of the conversion,10,,,years,Matches the JRSA term (section A).
 "Residual value at the end of year 10, % of conversion cost",0,,,%,"Equipment returns to IMAX at the end of a JRSA (IMAX 10-K, p. 42). Assumed zero."
 Discount rate,0.095,,,%,AMC's own rate for U.S. theatre cash flows (section A).
